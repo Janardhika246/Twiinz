@@ -30,7 +30,7 @@ html{
 .Header-1,
 .Header-2{
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
     padding: 2rem 9%;
     background: var(--green);
@@ -42,6 +42,16 @@ html{
     box-shadow: 0.5rem 1rem rgba(0,0,0,.1);
     position: relative;
     z-index: 10000;
+}
+
+.Header-1 .logo{
+    font-weight: bolder;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.Header-1 .logo i{
+    color: yellow;
 }
 
 .Header-1 .search-bar-container{
@@ -82,7 +92,6 @@ html{
     color: #666;
     font-size: 2rem;
     margin-right: 2rem ;
-
 }
 
 .Header-2 .icons a{
@@ -103,8 +112,7 @@ html{
     border-radius: .5rem;
     cursor: pointer;
     display: none;
-
-
+}
 
 
 .Header-1{
@@ -164,15 +172,16 @@ html{
     top:100%; left: 0; right: 0;
     background: #eee;
     padding: 1rem 2rem;
-    border-top: .1rem solid rgb(0,0,0,.3);
+    border-top: .1rem solid rgba(0,0,0,.3);
+    clip-path: polygon(0 0, 100% 0, 0 0);
 }
 
-.Header-2 .navbar a{
+    .Header-2 .navbar a{
     display: block;
-    margin: 1.5rem 0;
-    padding: 10rem;
+    margin:1.5rem 0;
+    padding: 1.5em;
     border-radius: .5rem;
-    border: .1rem solid rgba(0,0,0,.3);
+    border: .1rem solid rgba(0, 0, 0, .3);
     background: #fff;
     text-align: center;
 }
@@ -185,10 +194,10 @@ html{
     width: 100%;
     margin-top: 2rem;
 }
+}
 
 @media (max-width: 450px){
     html{
         font-size: 50%;
     }
-}
 }
